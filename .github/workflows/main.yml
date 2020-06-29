@@ -4,7 +4,7 @@ on: [push, pull_request, release, deployment, issues, issue_comment, repository_
 
 jobs:
   dump-context:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted]
     steps:
       - name: Dump GitHub context
         env:
